@@ -1,0 +1,5 @@
+{
+    "prettier.bracketSameLine": true,
+    "debug.console.acceptSuggestionOnEnter": "off",
+    "emmet.triggerExpansionOnTab": true
+}
