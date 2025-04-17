@@ -1,5 +1,6 @@
-import './App.css';
+// import './App.css';
 import { useState } from 'react';
+import './Chatbot.css';
 
 export const Chatbot=()=> {
   const [messages, setMessages] = useState('');
@@ -24,7 +25,7 @@ export const Chatbot=()=> {
     <div className="App">
       <h2>Shenskho Chatbot</h2>
 
-      <div>
+      <div className='input-container'>
         <input
           onChange={(e) => setMessages(e.target.value)}
           type="text"
@@ -34,8 +35,8 @@ export const Chatbot=()=> {
       </div>
 
       {response && (
-        <div style={{ marginTop: '1rem', padding: '1rem', border: '1px solid #ccc' }}>
-          <strong>Gemini:</strong> {response}
+        <div>
+          <strong>Shenskho:</strong> {response}
         </div>
       )}
     </div>
